@@ -28,7 +28,14 @@ const showMessage = (message) => {
 };
 
 const handleAllCalculations = () => {
-console.log('fon')
+const date = dateOfBirth.value;
+const numberToCheck = luckyNumber.value;
+if (date && numberToCheck) {
+  const sumOfDate = calculateSum(date);
+  checkIsNumberLucky(sumOfDate, numberToCheck);
+} else {
+  showMessage("Please enter both the fields");
+}
    
 }
 checkButton.addEventListener("click", handleAllCalculations);
