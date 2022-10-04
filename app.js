@@ -18,7 +18,7 @@ const checkIsNumberLucky = (sumOfDate , numberToCheck) => {
   if(sumOfDate % numberToCheck===0){
       return showMessage('Your Birthday is Lucky!! 🤩 🤩');
   }
-   showMessage(' sorry!!not that lucky Birthday😕');
+   showMessage(' sorry!!your Birthday not lucky😕');
 }
 
 
